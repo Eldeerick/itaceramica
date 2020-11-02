@@ -1,0 +1,145 @@
+body {
+    margin: 0px 0px 0px 0px;
+    display: block;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: gold;
+    padding: 0.5em
+}
+
+.items {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.items-grid {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-areas:
+    'a b c d'
+     ;
+}
+
+.item {
+    display: flex;
+    border: 1px solid #d9d9d9;
+    background-color: white;
+    border-radius: 2px;
+    max-width: 250px;
+    max-height: 500px;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.item:hover {
+    box-shadow: 0 0 1em rgb(51,51,51, 0.2);
+}
+
+.item a {
+    text-decoration: none;
+    padding: 1em;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+.item-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name {
+    font-size: 18px;
+    color: rgb(51, 51 ,51, 0.9);
+}
+
+.frete {
+    color: #00a650;
+    margin: 1em 0em 1em 0em;
+}
+
+.product-price {
+    color: rgb(51, 51, 51);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item-container {
+    display: flex;
+    max-width: 1200px;
+    border: 1px solid #d9d9d9;
+    background-color: white;
+    border-radius: 2px;
+    padding: 2em
+}
+
+.item-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-photo img {
+    width: 200px;
+    height: auto;
+}
+
+@media (max-width: 1200px) {
+    .items-grid {
+        grid-template-areas: 'a b c d';
+    }
+}
+
+@media(max-width: 992px) {
+    .items-grid {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .items-grid {
+        grid-template-areas: 'a b c';
+        row-gap: 0px;
+        column-gap: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+    .item {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 576px) {
+    .items-grid {
+        grid-template-areas: 'a b';
+        grid-row-gap: 0px;
+        grid-column-gap: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+    .item {
+        max-width: 100%;
+    }
+}
