@@ -8,7 +8,22 @@ body {
 
 header {
     background-color: gold;
-    padding: 0.5em
+    padding: 0.2em 0 0.2em 1em;
+}
+
+.banner {
+    height: 35vw;
+    max-height: 660px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .items {
@@ -43,7 +58,7 @@ header {
 }
 
 .item:hover {
-    box-shadow: 0 0 1em rgb(51,51,51, 0.2);
+    box-shadow: 0 0 1em rgb(51, 51, 51, 0.2);
 }
 
 .item a {
@@ -104,6 +119,17 @@ header {
 .item-photo img {
     width: 200px;
     height: auto;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: gold;
+    align-items: center;
+    margin-top: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 @media (max-width: 1200px) {
