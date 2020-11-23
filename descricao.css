@@ -110,6 +110,18 @@ header {
     cursor: pointer;
 }
 
+.box-success {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: green;
+    color: white;
+    border-radius: 4px
+}
+
+.display-none {
+    display: none
+}
+
 @media(max-width: 1200px) {
 }
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contato.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>ItaCerâmica :: Contato</title>
 </head>
 <body>
@@ -26,9 +27,13 @@
                 <input type="text" placeholder="Informe seu e-mail" required name="email" />
                 <label>Comentário<span>*</span>:</label>
                 <textarea type="text" placeholder="O que deseja nos informar?" required name="comment" rows="10" cols="30"></textarea>
-                <button type="submit" value="Enviar">Enviar</button>
+                <button id="btn-contato" type="submit" value="Enviar">Enviar</button>
             </form>
+            <div class="box-success">
+                Contato enviado com sucesso!
+            </div>
         </div>
-    </div>            
+    </div>          
+    <script src="contato.js"></script>  
 </body>
 </html>

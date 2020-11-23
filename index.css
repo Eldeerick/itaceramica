@@ -11,6 +11,10 @@ header {
     padding: 0.2em 0 0.2em 1em;
 }
 
+.ui-controlgroup-horizontal .ui-spinner-input {
+    width: 20px;
+  }
+
 .banner {
     height: 35vw;
     max-height: 660px;
